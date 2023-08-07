@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <h4>Добавление, изменение и удаление элемента</h4>
+        <form>
+            <label>
+                Имя
+                <input class="inputName" type="text" placeholder="Bruce Reyes">
+            </label>
+            <label>
+                Возраст
+                <input class="inputYear" type="text" placeholder="24">
+            </label>
+            <button type="submit" class="formBtn">Показать</button>
+        </form>
+        <div class="wrap">
+            <div class="number">No</div>
+            <div class="name">Имя студента</div>
+            <div class="year">Год рождения</div>
+            <div class="deystviya">Действия</div>
+        </div>
+        <div class="editPopUpWrap">
+            <div class="editPopUp">
+                <h3 class="editPopUp-heading">Внестие изменения</h3>
+                <input type="text" class="editPopUp-name" placeholder="Имя">
+                <input type="text" class="editPopUp-year" placeholder="Ваш возраст">
+                <button type="submit" class="popUpBtn">Показать</button>
+                <span class="editPopUp-close">&#10006</span>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
